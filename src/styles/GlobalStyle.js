@@ -12,9 +12,6 @@ const GlobalStyle = createGlobalStyle`
     font-size: 16px;
     background-color: hsl(0, 0%, 98%);
     color: hsl(0, 0%, 8%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   p, a {
