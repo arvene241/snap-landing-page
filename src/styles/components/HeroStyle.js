@@ -7,13 +7,14 @@ export const Main = styled.main`
   justify-content: center;
   margin: 0 auto;
   gap: 20px;
-  width: 450px;
 
   img {
     width: 100%;
   }
 
   @media (min-width: 450px) {
+    width: 450px;
+    
     img {
       width: 450px;
     }

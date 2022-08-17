@@ -61,12 +61,18 @@ export const ButtonContainer = styled.div`
   }
 
   .border {
-    padding: 10px 70px;
+    padding: 10px 40px;
     border: 2px solid hsl(0, 0%, 41%);
     border-radius: 15px;
 
     :hover, :active {
       border: 2px solid hsl(0, 0%, 8%);;
+    }
+  }
+
+  @media (min-width: 500px) {
+    .border {
+      padding: 10px 70px;
     }
   }
 
