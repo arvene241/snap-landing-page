@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../images/logo.svg";
 import hamburger from "../images/icon-menu.svg";
 import close from "../images/icon-close-menu.svg";
@@ -16,6 +16,15 @@ import Button from "./Button";
 
 export default function Header() {
   const [toggle, setToggle] = useState(false);
+
+  useEffect(() => {
+    if (toggle) {
+      document.body.style.overflowY = "hidden";
+    } else {
+      document.body.style.overflowY = "unset";
+    }
+
+  }, [toggle])
 
   return (
     <Container>
